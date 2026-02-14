@@ -1,37 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Interactive Pixel Wall</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet Block Interactive Pixel Wall</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Interactive Pixel Wall</a>
+      <a class="brand" href="index.html">Fleet Block Pixel Wall</a>
       <nav class="nav">
-        <a href="home.html">Home</a>
-        <a href="community.html">Community</a>
-        <a href="artist.html">Artist</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="fleet-block.html" class="nav-link">Fleet Block</a>
+        <a href="community.html" class="nav-link">Community</a>
+        <a href="artist-work.html" class="nav-link">Artist Work</a>
       </nav>
     </div>
   </header>
 
-  <main class="container stack">
+  <main class="container">
     <section class="hero">
-      <h1>Fleet Block Interactive Pixel Wall</h1>
-      <p>
-        A proposed public artwork designed to encourage participation, expression,
-        and collective creativity within Salt Lake City.
+      <div class="hero-copy">
+        <h1>Interactive public art that invites participation.</h1>
+        <p>
+          The Fleet Block Interactive Pixel Wall is a community-centered mural experience:
+          people touch tiles to reveal stories, celebrate identity, and build shared belonging.
+        </p>
+        <div class="btn-row">
+          <a class="btn" href="fleet-block.html">See the installation</a>
+          <a class="btn btn-ghost" href="artist-work.html">View the artist archive</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img src="images/home-bench-day.png" alt="People interacting with the pixel wall" class="hero-img" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Featured moments</h2>
+      <p class="subtle">
+        A few views that show how the wall changes across time, lighting, and participation.
       </p>
+
+      <div class="grid grid-3">
+        <figure class="card">
+          <img class="card-img lightbox" src="images/home-curved-dusk.png" alt="Curved wall at dusk" />
+          <figcaption class="card-cap">Curved wall at dusk</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img class="card-img lightbox" src="images/home-curved-night.png" alt="Curved wall at night" />
+          <figcaption class="card-cap">Night activation</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img class="card-img lightbox" src="images/home-mural-rainbow.png" alt="Mural panels in rainbow colors" />
+          <figcaption class="card-cap">Mural panels + community interaction</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="split">
+        <div>
+          <h2>Designed for access + participation</h2>
+          <ul class="bullets">
+            <li>Touch-based interaction that’s intuitive (no app required)</li>
+            <li>Public seating integrated with the installation</li>
+            <li>Artwork archive recorded and displayed on the website</li>
+            <li>Community themes: Justice, Belonging, Community, Equity</li>
+          </ul>
+        </div>
+        <div class="split-media">
+          <img class="lightbox" src="images/home-smiley-family.png" alt="Family interacting with smiley image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>More interaction views</h2>
+      <div class="grid grid-3">
+        <figure class="card">
+          <img class="card-img lightbox" src="images/home-smiley-hands.png" alt="Two children holding hands at the wall" />
+          <figcaption class="card-cap">Shared moment</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img class="card-img lightbox" src="images/home-smiley-family.png" alt="Family watching children interact" />
+          <figcaption class="card-cap">Family engagement</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img class="card-img lightbox" src="images/home-bench-day.png" alt="Bench view of the wall" />
+          <figcaption class="card-cap">Bench view</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© Interactive Pixel Wall Project</p>
+      <p>Fleet Block Interactive Pixel Wall • Student Project Site</p>
     </div>
   </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightboxImg" alt="" />
+    <p id="lightboxCap" class="lightbox-cap"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
