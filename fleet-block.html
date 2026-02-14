@@ -1,107 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fleet Block • Installation</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fleet Block | Interactive Pixel Wall</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Fleet Block Pixel Wall</a>
+      <div class="brand">
+        <div class="brand-title">Fleet Block</div>
+        <div class="brand-subtitle">Project + site context + technical overview</div>
+      </div>
+
       <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="fleet-block.html" class="nav-link">Fleet Block</a>
-        <a href="community.html" class="nav-link">Community</a>
-        <a href="artist-work.html" class="nav-link">Artist Work</a>
+        <a href="index.html">Home</a>
+        <a href="fleet-block.html" class="active">Fleet Block</a>
+        <a href="community.html">Community</a>
+        <a href="artist-work.html">Artist Work</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="page-title">
-      <h1>The Installation</h1>
-      <p class="subtle">
-        Site context, dimensions, and technical details for the Fleet Block Interactive Pixel Wall.
+    <section class="section">
+      <h1>Fleet Block Interactive Pixel Wall</h1>
+      <p>
+        The wall is designed as a welcoming, durable public artwork where visitors can interact with a field of
+        illuminated pixel tiles and view archived community-created pixel art through a QR plaque.
       </p>
     </section>
 
     <section class="section">
-      <h2>Site map + placement</h2>
-      <div class="grid grid-2">
-        <figure class="card">
-          <img class="card-img lightbox" src="images/tech-site-map.png" alt="Site map showing Fleet Block placement" />
-          <figcaption class="card-cap">Fleet Block site map</figcaption>
-        </figure>
-        <div class="card card-pad">
-          <h3>Placement goals</h3>
-          <ul class="bullets">
-            <li>High visibility from primary walk paths</li>
-            <li>Built-in seating encourages gathering</li>
-            <li>Safe access for all ages</li>
-            <li>Works during day + night</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Elevation + scale</h2>
-      <div class="grid grid-2">
-        <figure class="card">
-          <img class="card-img lightbox" src="images/tech-elevations.png" alt="Front, side, and back elevations" />
-          <figcaption class="card-cap">Elevations (front / side / back)</figcaption>
+      <h2>Site + context</h2>
+      <div class="grid two">
+        <figure class="tile">
+          <img src="images/tech-site-map.png" alt="Site map showing location and paths" />
+          <figcaption>Site map / placement</figcaption>
         </figure>
 
-        <figure class="card">
-          <img class="card-img lightbox" src="images/tech-context-grid.png" alt="Context grid render of the installation" />
-          <figcaption class="card-cap">Context render (grid)</figcaption>
+        <figure class="tile">
+          <img src="images/tech-context-grid.png" alt="Context grid showing aerial, pedestrian, night activation, and urban context" />
+          <figcaption>Context (aerial / pedestrian / night / urban)</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="section">
       <h2>Technical details</h2>
-      <div class="grid grid-2">
-        <figure class="card">
-          <img class="card-img lightbox" src="images/tech-pixel-detail.png" alt="Pixel tile detail diagram" />
-          <figcaption class="card-cap">Interactive pixel tile detail</figcaption>
+      <div class="grid two">
+        <figure class="tile">
+          <img src="images/tech-pixel-detail.png" alt="Pixel tile detail diagram" />
+          <figcaption>Interactive pixel tile detail</figcaption>
         </figure>
 
-        <figure class="card">
-          <img class="card-img lightbox" src="images/tech-qr-detail.png" alt="QR archive plaque detail diagram" />
-          <figcaption class="card-cap">QR archive plaque detail</figcaption>
+        <figure class="tile">
+          <img src="images/tech-qr-detail.png" alt="QR archive plaque detail diagram" />
+          <figcaption>QR archive plaque detail</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <img src="images/tech-elevations.png" alt="Front, side, and back elevations drawing" />
+          <figcaption>Front / side / back elevations</figcaption>
         </figure>
       </div>
-
-      <div class="note">
-        <strong>How it connects to the website:</strong>
-        the QR plaque links visitors to the online archive where artwork and artist info are recorded.
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Optional: process screenshot</h2>
-      <p class="subtle">Only included if the file exists in your images folder.</p>
-      <figure class="card">
-        <img class="card-img lightbox" src="images/Screenshot 2026-02-13 200335.png" alt="Process screenshot" />
-        <figcaption class="card-cap">Process / documentation</figcaption>
-      </figure>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Fleet Block Interactive Pixel Wall • Installation</p>
+      <div>Fleet Block</div>
+      <div class="muted">Built with HTML/CSS/JS for class submission.</div>
     </div>
   </footer>
-
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <button id="lightboxClose" class="lightbox-close" aria-label="Close image">×</button>
-    <img id="lightboxImg" alt="" />
-    <p id="lightboxCap" class="lightbox-cap"></p>
-  </div>
 
   <script src="script.js"></script>
 </body>
