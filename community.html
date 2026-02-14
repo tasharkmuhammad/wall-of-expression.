@@ -1,97 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Community • Themes</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community | Interactive Pixel Wall</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Fleet Block Pixel Wall</a>
+      <div class="brand">
+        <div class="brand-title">Community</div>
+        <div class="brand-subtitle">Interaction, accessibility, and shared meaning</div>
+      </div>
+
       <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="fleet-block.html" class="nav-link">Fleet Block</a>
-        <a href="community.html" class="nav-link">Community</a>
-        <a href="artist-work.html" class="nav-link">Artist Work</a>
+        <a href="index.html">Home</a>
+        <a href="fleet-block.html">Fleet Block</a>
+        <a href="community.html" class="active">Community</a>
+        <a href="artist-work.html">Artist Work</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="page-title">
-      <h1>Community Themes</h1>
-      <p class="subtle">
-        The wall supports shared expression through four themes: Justice, Belonging, Community, and Equity.
+    <section class="section">
+      <h1>Community impact</h1>
+      <p>
+        The pixel wall works like a public “canvas.” It invites quick participation (touch + light response),
+        makes collaboration visible, and supports shared experiences across different ages and backgrounds.
       </p>
     </section>
 
     <section class="section">
-      <figure class="card">
-        <img class="card-img lightbox" src="images/community-four-themes.png" alt="Connecting to four themes diagram" />
-        <figcaption class="card-cap">Connecting to Four Themes</figcaption>
-      </figure>
-    </section>
-
-    <section class="section">
-      <h2>Touch interaction (non-intrusive)</h2>
-      <p class="subtle">
-        Interaction is simple: touch a tile to reveal imagery. People can participate briefly or stay to collaborate.
-      </p>
-
-      <div class="grid grid-3">
-        <figure class="card">
-          <img class="card-img lightbox" src="images/community-touch-detail.png" alt="Close-up of touching tiles" />
-          <figcaption class="card-cap">Touch detail</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img class="card-img lightbox" src="images/community-touch-front.png" alt="Front view of a participant touching tiles" />
-          <figcaption class="card-cap">Front view interaction</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img class="card-img lightbox" src="images/community-touch-profile.png" alt="Profile view of a participant touching tiles" />
-          <figcaption class="card-cap">Profile view interaction</figcaption>
+      <h2>Connecting to four themes</h2>
+      <div class="grid">
+        <figure class="tile">
+          <img src="images/community-four-themes.png" alt="Diagram connecting wall to four themes" />
+          <figcaption>Four themes diagram</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="section">
-      <h2>Why these themes matter</h2>
-      <div class="grid grid-2">
-        <div class="card card-pad">
-          <h3>Justice</h3>
-          <p>Encourages empathy and shared responsibility by reflecting the lives of others in the community.</p>
-        </div>
-        <div class="card card-pad">
-          <h3>Belonging</h3>
-          <p>Invites collective creation of supportive, welcoming imagery that people recognize as “for us.”</p>
-        </div>
-        <div class="card card-pad">
-          <h3>Community</h3>
-          <p>Visually celebrates diversity, collaboration, and public gathering through shared participation.</p>
-        </div>
-        <div class="card card-pad">
-          <h3>Equity</h3>
-          <p>Accessible and intuitive interaction that welcomes all ages and backgrounds to engage equally.</p>
-        </div>
+      <h2>Non-intrusive interaction examples</h2>
+      <p class="muted">
+        These images show interaction without requiring an account, download, or complicated steps. People can
+        participate simply by approaching and touching the wall.
+      </p>
+
+      <div class="grid two">
+        <figure class="tile">
+          <img src="images/community-touch-front.png" alt="Child touching the pixel wall front view" />
+          <figcaption>Front view interaction</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <img src="images/community-touch-profile.png" alt="Child touching wall profile view" />
+          <figcaption>Profile view interaction</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <img src="images/community-touch-detail.png" alt="Close detail of hand touching pixel wall" />
+          <figcaption>Touch detail</figcaption>
+        </figure>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Fleet Block Interactive Pixel Wall • Community</p>
+      <div>Community</div>
+      <div class="muted">Simple, accessible participation is the goal.</div>
     </div>
   </footer>
-
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <button id="lightboxClose" class="lightbox-close" aria-label="Close image">×</button>
-    <img id="lightboxImg" alt="" />
-    <p id="lightboxCap" class="lightbox-cap"></p>
-  </div>
 
   <script src="script.js"></script>
 </body>
